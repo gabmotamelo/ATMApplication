@@ -30,8 +30,8 @@ int main()
 	secondAccount.deposit(400);
 
 	firstAccount.withdraw(300);
-	secondAccount.withdraw(500);
+	secondAccount.withdraw(200);
 
-	cout << "First Account = R$ " << firstAccount.balance << endl << "Second Account = R$ " << secondAccount.balance << endl;
+	cout << "First Account = R$ " << firstAccount.getBalance() << endl << "Second Account = R$ " << secondAccount.getBalance() << endl;
 
 }

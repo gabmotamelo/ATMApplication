@@ -1,2 +1,34 @@
-﻿  MainATM.cpp
-  ATMApplication.vcxproj -> C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\x64\Debug\ATMApplication.exe
+﻿  Account.cpp
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.cpp(28,15): error C2511: 'void Account::setNameHolder(std::string)': overloaded member function not found in 'Account'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(4,7): message : see declaration of 'Account'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.cpp(30,2): error C2597: illegal reference to non-static member 'Account::nameHolder'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(9,14): message : see declaration of 'Account::nameHolder'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.cpp(34,15): error C2511: 'void Account::setCpfHolder(std::string)': overloaded member function not found in 'Account'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(4,7): message : see declaration of 'Account'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.cpp(35,2): error C2597: illegal reference to non-static member 'Account::cpfHolder'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(8,14): message : see declaration of 'Account::cpfHolder'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.cpp(38,15): error C2511: 'void Account::setAccountNumber(std::string)': overloaded member function not found in 'Account'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(4,7): message : see declaration of 'Account'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.cpp(39,2): error C2597: illegal reference to non-static member 'Account::accountNumber'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(7,14): message : see declaration of 'Account::accountNumber'
+  Account.hpp
+  MainATM.cpp
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\MainATM.cpp(19,14): error C2248: 'Account::accountNumber': cannot access private member declared in class 'Account'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(7,14): message : see declaration of 'Account::accountNumber'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(4,7): message : see declaration of 'Account'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\MainATM.cpp(20,14): error C2248: 'Account::cpfHolder': cannot access private member declared in class 'Account'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(8,14): message : see declaration of 'Account::cpfHolder'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(4,7): message : see declaration of 'Account'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\MainATM.cpp(21,14): error C2248: 'Account::nameHolder': cannot access private member declared in class 'Account'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(9,14): message : see declaration of 'Account::nameHolder'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(4,7): message : see declaration of 'Account'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\MainATM.cpp(24,14): error C2248: 'Account::accountNumber': cannot access private member declared in class 'Account'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(7,14): message : see declaration of 'Account::accountNumber'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(4,7): message : see declaration of 'Account'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\MainATM.cpp(25,14): error C2248: 'Account::cpfHolder': cannot access private member declared in class 'Account'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(8,14): message : see declaration of 'Account::cpfHolder'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(4,7): message : see declaration of 'Account'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\MainATM.cpp(26,14): error C2248: 'Account::nameHolder': cannot access private member declared in class 'Account'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(9,14): message : see declaration of 'Account::nameHolder'
+C:\Users\gabri\Documents\C++ PROJETOS\ATMAPPLICATION\ATMApplication\Account.hpp(4,7): message : see declaration of 'Account'
+  Generating Code...
