@@ -15,23 +15,22 @@ void showMenu() {
 
 int main()
 {
-	Account firstAccount;
-	firstAccount.accountNumber = "123456";
-	firstAccount.cpfHolder = "123.456.789-00";
-	firstAccount.nameHolder = "Gabriel";
+	Account firstAccount("123456","Gabriels", "123.456.789-00");
 
-	Account secondAccount;
-	firstAccount.accountNumber = "654321";
-	firstAccount.cpfHolder = "987.654.321-00";
-	firstAccount.nameHolder = "Mota";
-	
+	Account secondAccount("654321","Motasss", "987.654.321-00");
 
-	firstAccount.deposit(200);
-	secondAccount.deposit(400);
+	Account thirdAccount("655454", "Melosss", "987.654.321-00");
 
-	firstAccount.withdraw(300);
-	secondAccount.withdraw(200);
+
+	firstAccount.deposit(500);
+	firstAccount.withdraw(200);
+
+	secondAccount.deposit(300);
+	secondAccount.withdraw(50);
 
 	cout << "First Account = R$ " << firstAccount.getBalance() << endl << "Second Account = R$ " << secondAccount.getBalance() << endl;
 
+	cout << "Numero de contas :" <<Account::getUsersQuantity() << endl;
+
+	return 0;
 }

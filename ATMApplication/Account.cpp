@@ -1,6 +1,23 @@
 #include "Account.hpp"
 #include <iostream>
 
+int Account::usersQuantity = 0;
+
+Account::Account(std::string accountNumber, std::string nameHolder, std::string cpfHolder):
+	m_AccountNumber(accountNumber),
+	m_NameHolder(nameHolder), 
+	m_CpfHolder(cpfHolder), 
+	balance(0)
+{	
+	checkNameLength();
+	usersQuantity++;
+}
+
+Account::~Account() {
+	usersQuantity--;
+}
+
+
 void Account::withdraw(double withdrawAmount) {
 	if (withdrawAmount < 0) {
 		std::cout << "Withdraw denied: Amount balance is negative" << std::endl;
@@ -21,32 +38,33 @@ void Account::deposit(double depositAmount) {
 	balance += depositAmount;
 }
 
+
 double Account::getBalance() const{
 	return balance;
 }
 
 std::string Account::getNameHolder() {
-	return nameHolder;
+	return m_NameHolder;
 }
 
-void Account::setNameHolder(std::string name)
-{
-	nameHolder = name;
-}
 
 std::string Account::getCpfHolder() {
-	return cpfHolder;
-}
-
-void Account::setCpfHolder(std::string cpf) {
-	cpfHolder = cpf;
+	return m_CpfHolder;
 }
 
 std::string Account::getAccountNumber() {
-	return accountNumber;
+	return m_AccountNumber;
 }
 
-void Account::setAccountNumber(std::string number) {
-	accountNumber = number;
+int Account::getUsersQuantity() {
+	return usersQuantity;
 }
 
+void Account::checkNameLength()
+{
+	if (m_NameHolder.size() < 5) {}
+	{
+		std::cout << "Invalid name: Must be more than 5 characters" << std::endl;
+		std::exit(1);
+	}
+}
